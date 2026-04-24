@@ -91,18 +91,54 @@ button {
   border: 1px solid rgba(185, 144, 77, 0.48);
   border-radius: 8px;
   background: var(--teal);
-  color: #fff7e6;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 17px;
-  font-weight: 700;
 }
 
 .brand-mark.large {
   width: 62px;
   height: 62px;
-  font-size: 24px;
   background: #fff7e6;
-  color: var(--teal);
+}
+
+.brand-mark svg {
+  width: 38px;
+  height: 38px;
+}
+
+.brand-mark.large svg {
+  width: 54px;
+  height: 54px;
+}
+
+.marian-bg {
+  fill: var(--teal);
+}
+
+.marian-crown,
+.marian-star {
+  fill: var(--gold);
+}
+
+.marian-mantle {
+  fill: #f7f3ea;
+}
+
+.marian-inner {
+  fill: #5e8fa6;
+}
+
+.brand-mark.large .marian-bg,
+.mini-logo .marian-bg {
+  fill: #fff7e6;
+}
+
+.brand-mark.large .marian-mantle,
+.mini-logo .marian-mantle {
+  fill: var(--teal);
+}
+
+.brand-mark.large .marian-inner,
+.mini-logo .marian-inner {
+  fill: var(--blue);
 }
 
 .brand-copy {
@@ -370,9 +406,11 @@ h3 {
   place-items: center;
   border-radius: 8px;
   background: #fff7e6;
-  color: var(--teal);
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 700;
+}
+
+.mini-logo svg {
+  width: 30px;
+  height: 30px;
 }
 
 .platform-sidebar span:not(.mini-logo) {

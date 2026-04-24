@@ -25,14 +25,14 @@ O site abre em `http://localhost:5173`.
 npm run build
 ```
 
-O build de produção fica em `dist/`.
+O build de produção fica em `build/`.
 
 ## Deploy no Render
 
 Este repositório já inclui `render.yaml` com um serviço estático:
 
 - Build command: `npm ci && npm run build`
-- Publish path: `./dist`
+- Publish path: `./build`
 - SPA rewrite para `index.html`
 
 Depois de subir o código para GitHub, GitLab ou Bitbucket, crie um Blueprint no Render apontando para este repositório.

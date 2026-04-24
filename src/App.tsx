@@ -180,11 +180,23 @@ const technologies = [
   "Figma",
 ];
 
+function MarianIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 64 64" role="img" aria-label="Ícone mariano">
+      <path className="marian-bg" d="M8 18c0-5.5 4.5-10 10-10h28c5.5 0 10 4.5 10 10v28c0 5.5-4.5 10-10 10H18C12.5 56 8 51.5 8 46V18Z" />
+      <path className="marian-crown" d="M22 18l5.5 5 4.5-7 4.5 7 5.5-5 1.8 11H20.2L22 18Z" />
+      <path className="marian-mantle" d="M32 27c-7.6 6.4-12.1 14.7-13.4 25h26.8C44.1 41.7 39.6 33.4 32 27Z" />
+      <path className="marian-inner" d="M32 31c-3.8 5.2-5.8 11-6 17.4h12C37.8 42 35.8 36.2 32 31Z" />
+      <path className="marian-star" d="M32 10l1.2 3.2 3.4.2-2.6 2.1.9 3.3-2.9-1.8-2.9 1.8.9-3.3-2.6-2.1 3.4-.2L32 10Z" />
+    </svg>
+  );
+}
+
 function Logo() {
   return (
     <a className="brand" href="#top" aria-label="Gratia Plena Sistemas">
       <span className="brand-mark" aria-hidden="true">
-        GP
+        <MarianIcon />
       </span>
       <span className="brand-copy">
         <strong>Gratia Plena</strong>
@@ -286,7 +298,9 @@ function Hero() {
           </div>
           <div className="platform-card">
             <div className="platform-sidebar">
-              <span className="mini-logo">GP</span>
+              <span className="mini-logo">
+                <MarianIcon />
+              </span>
               <span />
               <span />
               <span />
@@ -467,7 +481,9 @@ function CaseStudyDemo() {
 
           <div className="case-demo" style={{ "--case-accent": activeCase.accent } as CSSProperties}>
             <div className="demo-sidebar">
-              <span className="mini-logo">GP</span>
+              <span className="mini-logo">
+                <MarianIcon />
+              </span>
               <a href="#cases">Home</a>
               <a href="#cases">Pedidos</a>
               <a href="#cases">Produção</a>
@@ -621,7 +637,7 @@ function Contact() {
       <div className="container contact-panel">
         <div className="contact-copy">
           <span className="brand-mark large" aria-hidden="true">
-            GP
+            <MarianIcon />
           </span>
           <p className="eyebrow">Pronto para transformar sua operação?</p>
           <h2>Vamos conversar sobre o sistema ideal para o seu negócio.</h2>
