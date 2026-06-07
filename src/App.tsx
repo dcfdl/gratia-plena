@@ -21,7 +21,7 @@ import {
   X,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties, FormEvent } from "react";
 
 type Service = {
@@ -839,6 +839,20 @@ function HomePage() {
 
 export default function App() {
   const isPrivacyPage = window.location.pathname.replace(/\/$/, "") === "/privacy";
+
+  useEffect(() => {
+    document.title = isPrivacyPage
+      ? "Política de Privacidade | Gratia Plena Sistemas"
+      : "Gratia Plena Sistemas | Software sob demanda";
+
+    const description = document.querySelector('meta[name="description"]');
+    description?.setAttribute(
+      "content",
+      isPrivacyPage
+        ? "Política de privacidade da Gratia Plena Sistemas para dados enviados pelo site e canais de contato."
+        : "Gratia Plena Sistemas desenvolve software sob demanda: sistemas web, apps, integrações, automações, dados e sustentação evolutiva.",
+    );
+  }, [isPrivacyPage]);
 
   return (
     <>
