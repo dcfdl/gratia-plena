@@ -40,11 +40,11 @@ type CaseStudy = {
 };
 
 const navLinks = [
-  { label: "Soluções", href: "#solucoes" },
-  { label: "Como trabalhamos", href: "#processo" },
-  { label: "Cases", href: "#cases" },
-  { label: "Tecnologias", href: "#tecnologias" },
-  { label: "Sobre", href: "#sobre" },
+  { label: "Soluções", href: "/#solucoes" },
+  { label: "Como trabalhamos", href: "/#processo" },
+  { label: "Cases", href: "/#cases" },
+  { label: "Tecnologias", href: "/#tecnologias" },
+  { label: "Sobre", href: "/#sobre" },
 ];
 
 const services: Service[] = [
@@ -194,7 +194,7 @@ function MarianIcon({ className = "" }: { className?: string }) {
 
 function Logo() {
   return (
-    <a className="brand" href="#top" aria-label="Gratia Plena Sistemas">
+    <a className="brand" href="/" aria-label="Gratia Plena Sistemas">
       <span className="brand-mark" aria-hidden="true">
         <MarianIcon />
       </span>
@@ -229,7 +229,7 @@ function Header() {
             </a>
           ))}
         </nav>
-        <a className="header-cta" href="#contato">
+        <a className="header-cta" href="/#contato">
           Falar com um especialista
           <ArrowRight size={17} />
         </a>
@@ -695,7 +695,7 @@ function Footer() {
         <div>
           <h3>Soluções</h3>
           {services.slice(0, 5).map((service) => (
-            <a key={service.title} href="#solucoes">
+            <a key={service.title} href="/#solucoes">
               {service.title}
             </a>
           ))}
@@ -716,25 +716,135 @@ function Footer() {
       </div>
       <div className="container footer-bottom">
         <span>© {new Date().getFullYear()} Gratia Plena Sistemas. Todos os direitos reservados.</span>
-        <span>Software sob demanda com clareza, segurança e suporte.</span>
+        <span>
+          <a href="/privacy">Política de privacidade</a>
+          <span className="footer-separator" aria-hidden="true">/</span>
+          Software sob demanda com clareza, segurança e suporte.
+        </span>
       </div>
     </footer>
   );
 }
 
+function PrivacyPage() {
+  return (
+    <section className="legal-page">
+      <div className="container">
+        <div className="legal-hero">
+          <p className="eyebrow">Política de privacidade</p>
+          <h1>Como tratamos dados pessoais no site da Gratia Plena Sistemas.</h1>
+          <p>
+            Esta política explica quais informações podem ser coletadas por este site, como elas
+            são usadas e quais canais estão disponíveis para solicitações relacionadas à
+            privacidade.
+          </p>
+          <span>Última atualização: 7 de junho de 2026.</span>
+        </div>
+
+        <div className="legal-content">
+          <article className="legal-section">
+            <h2>1. Quem somos</h2>
+            <p>
+              A Gratia Plena Sistemas desenvolve soluções de software sob demanda para empresas.
+              Neste site, o tratamento de dados é limitado ao relacionamento comercial,
+              atendimento a contatos recebidos e manutenção da segurança da página.
+            </p>
+          </article>
+
+          <article className="legal-section">
+            <h2>2. Dados que podemos coletar</h2>
+            <p>
+              Quando você utiliza o formulário de contato, podemos receber nome, empresa,
+              mensagem e endereço de e-mail, conforme as informações que você envia. Também podem
+              ser registrados dados técnicos básicos de navegação, como data de acesso, endereço IP,
+              navegador e páginas visitadas, quando fornecidos por ferramentas de hospedagem,
+              segurança ou análise.
+            </p>
+          </article>
+
+          <article className="legal-section">
+            <h2>3. Como usamos essas informações</h2>
+            <ul>
+              <li>Responder solicitações enviadas pelo formulário ou por e-mail.</li>
+              <li>Entender necessidades comerciais e preparar propostas ou retornos técnicos.</li>
+              <li>Manter o site funcionando com segurança, estabilidade e prevenção a abusos.</li>
+              <li>Cumprir obrigações legais ou regulatórias aplicáveis.</li>
+            </ul>
+          </article>
+
+          <article className="legal-section">
+            <h2>4. Compartilhamento de dados</h2>
+            <p>
+              Não vendemos dados pessoais. As informações podem ser compartilhadas apenas com
+              provedores necessários para operação do site, hospedagem, e-mail, segurança,
+              atendimento ou cumprimento de obrigações legais, sempre dentro do escopo necessário.
+            </p>
+          </article>
+
+          <article className="legal-section">
+            <h2>5. Cookies e tecnologias semelhantes</h2>
+            <p>
+              Este site pode usar cookies essenciais ou registros técnicos para funcionamento,
+              segurança e medição de desempenho. Caso ferramentas analíticas sejam adicionadas no
+              futuro, esta política deverá ser atualizada para detalhar essa utilização.
+            </p>
+          </article>
+
+          <article className="legal-section">
+            <h2>6. Retenção e segurança</h2>
+            <p>
+              Mantemos dados pessoais pelo tempo necessário para responder solicitações, conduzir
+              tratativas comerciais, cumprir obrigações legais e proteger nossos direitos. Adotamos
+              medidas razoáveis de segurança para reduzir riscos de acesso indevido, perda,
+              alteração ou divulgação não autorizada.
+            </p>
+          </article>
+
+          <article className="legal-section">
+            <h2>7. Seus direitos</h2>
+            <p>
+              Você pode solicitar acesso, correção, atualização, eliminação ou informações sobre o
+              tratamento dos seus dados pessoais. As solicitações serão avaliadas conforme a
+              legislação aplicável, incluindo a Lei Geral de Proteção de Dados Pessoais (LGPD).
+            </p>
+          </article>
+
+          <article className="legal-section legal-contact">
+            <h2>8. Contato sobre privacidade</h2>
+            <p>
+              Para dúvidas ou solicitações relacionadas a esta política, entre em contato pelo
+              e-mail <a href="mailto:contato@gratiaplenasistemas.com.br">contato@gratiaplenasistemas.com.br</a>.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function HomePage() {
+  return (
+    <>
+      <Hero />
+      <ProofStrip />
+      <Services />
+      <Process />
+      <CaseStudyDemo />
+      <WhyUs />
+      <TechStack />
+      <Contact />
+    </>
+  );
+}
+
 export default function App() {
+  const isPrivacyPage = window.location.pathname.replace(/\/$/, "") === "/privacy";
+
   return (
     <>
       <Header />
       <main>
-        <Hero />
-        <ProofStrip />
-        <Services />
-        <Process />
-        <CaseStudyDemo />
-        <WhyUs />
-        <TechStack />
-        <Contact />
+        {isPrivacyPage ? <PrivacyPage /> : <HomePage />}
       </main>
       <Footer />
     </>
