@@ -732,85 +732,165 @@ function PrivacyPage() {
       <div className="container">
         <div className="legal-hero">
           <p className="eyebrow">Política de privacidade</p>
-          <h1>Como tratamos dados pessoais no site da Gratia Plena Sistemas.</h1>
+          <h1>Como tratamos dados pessoais no GlicoData e no site da Gratia Plena Sistemas.</h1>
           <p>
-            Esta política explica quais informações podem ser coletadas por este site, como elas
-            são usadas e quais canais estão disponíveis para solicitações relacionadas à
-            privacidade.
+            Esta política explica quais informações podem ser coletadas pelo aplicativo GlicoData,
+            por este site e pelos canais de contato, como elas são usadas e como exercer seus
+            direitos relacionados à privacidade.
           </p>
-          <span>Última atualização: 7 de junho de 2026.</span>
+          <span>Última atualização: 25 de agosto de 2026.</span>
         </div>
 
         <div className="legal-content">
           <article className="legal-section">
-            <h2>1. Quem somos</h2>
+            <h2>1. Identificação do aplicativo e do responsável</h2>
             <p>
-              A Gratia Plena Sistemas desenvolve soluções de software sob demanda para empresas.
-              Neste site, o tratamento de dados é limitado ao relacionamento comercial,
-              atendimento a contatos recebidos e manutenção da segurança da página.
+              Esta Política de Privacidade aplica-se ao aplicativo <strong>GlicoData</strong>,
+              identificado na Google Play Store pelo pacote Android
+              <strong> com.gratiaplena.glicodata</strong>, e ao site da Gratia Plena Sistemas.
+            </p>
+            <p>
+              O desenvolvedor exibido na Google Play Store é <strong>Gratia Plena Sistemas</strong>,
+              nome fantasia de <strong>Davi Costa Ferreira da Luz Consultoria em Tecnologia da
+              Informação LTDA</strong>, inscrita no CNPJ sob o nº
+              <strong> 65.949.892/0001-17</strong>, pessoa jurídica responsável pelo
+              desenvolvimento e pela operação técnica do aplicativo e deste site.
+            </p>
+            <p>
+              O GlicoData é uma ferramenta de pesquisa e estimativa de risco de desenvolvimento de
+              diabetes. Ele não fornece diagnóstico médico e não substitui a avaliação de um
+              profissional de saúde.
             </p>
           </article>
 
           <article className="legal-section">
             <h2>2. Dados que podemos coletar</h2>
             <p>
-              Quando você utiliza o formulário de contato, podemos receber nome, empresa,
-              mensagem e endereço de e-mail, conforme as informações que você envia. Também podem
-              ser registrados dados técnicos básicos de navegação, como data de acesso, endereço IP,
-              navegador e páginas visitadas, quando fornecidos por ferramentas de hospedagem,
-              segurança ou análise.
+              No GlicoData, podemos tratar o primeiro nome, quando informado voluntariamente;
+              idade; renda mensal; sexo; medida da cintura; respostas sobre pressão arterial,
+              tabagismo, alimentação e atividade física; latitude e longitude do dispositivo,
+              mediante permissão de localização; e data e horário do envio do questionário.
+            </p>
+            <p>
+              Para usuários previamente autorizados que acessem funções administrativas com uma
+              Conta Google, também podemos tratar nome, endereço de e-mail, identificador da conta
+              e perfil de acesso. O GlicoData não recebe a senha da Conta Google nem coleta dados
+              de pagamento.
+            </p>
+            <p>
+              No site, quando você utiliza o formulário ou um canal de contato, podemos receber
+              nome, empresa, mensagem e endereço de e-mail. O provedor de hospedagem também pode
+              registrar dados técnicos básicos, como data de acesso, endereço IP, navegador e
+              páginas visitadas, para operação e segurança.
             </p>
           </article>
 
           <article className="legal-section">
             <h2>3. Como usamos essas informações</h2>
             <ul>
+              <li>Calcular e apresentar a estimativa de risco de diabetes no GlicoData.</li>
+              <li>
+                Realizar pesquisas e análises estatísticas sobre fatores de risco e sua
+                distribuição geográfica.
+              </li>
+              <li>Autenticar e autorizar pesquisadores e administradores cadastrados.</li>
               <li>Responder solicitações enviadas pelo formulário ou por e-mail.</li>
               <li>Entender necessidades comerciais e preparar propostas ou retornos técnicos.</li>
-              <li>Manter o site funcionando com segurança, estabilidade e prevenção a abusos.</li>
+              <li>Manter o aplicativo e o site seguros, estáveis e protegidos contra abusos.</li>
               <li>Cumprir obrigações legais ou regulatórias aplicáveis.</li>
             </ul>
           </article>
 
           <article className="legal-section">
-            <h2>4. Compartilhamento de dados</h2>
+            <h2>4. Localização</h2>
             <p>
-              Não vendemos dados pessoais. As informações podem ser compartilhadas apenas com
-              provedores necessários para operação do site, hospedagem, e-mail, segurança,
-              atendimento ou cumprimento de obrigações legais, sempre dentro do escopo necessário.
+              O GlicoData solicita a localização no momento do envio do questionário para permitir
+              análises geográficas dos fatores de risco. A coleta de latitude e longitude depende
+              da permissão concedida no dispositivo. Se a permissão não for concedida ou se a
+              localização não estiver disponível, o questionário poderá ser enviado sem esses
+              dados.
             </p>
           </article>
 
           <article className="legal-section">
-            <h2>5. Cookies e tecnologias semelhantes</h2>
+            <h2>5. Armazenamento e prestadores de serviço</h2>
             <p>
-              Este site pode usar cookies essenciais ou registros técnicos para funcionamento,
-              segurança e medição de desempenho. Caso ferramentas analíticas sejam adicionadas no
-              futuro, esta política deverá ser atualizada para detalhar essa utilização.
+              Os dados enviados pelo GlicoData são armazenados utilizando os serviços Google
+              Firebase Authentication e Cloud Firestore. O site é hospedado no Render. Esses
+              prestadores podem tratar dados técnicos necessários ao funcionamento, à hospedagem e
+              à segurança dos serviços, conforme seus próprios termos e medidas de proteção. O
+              acesso aos registros do aplicativo é restrito por autenticação e regras de controle
+              de acesso.
             </p>
           </article>
 
           <article className="legal-section">
-            <h2>6. Retenção e segurança</h2>
+            <h2>6. Compartilhamento de dados</h2>
             <p>
-              Mantemos dados pessoais pelo tempo necessário para responder solicitações, conduzir
-              tratativas comerciais, cumprir obrigações legais e proteger nossos direitos. Adotamos
-              medidas razoáveis de segurança para reduzir riscos de acesso indevido, perda,
-              alteração ou divulgação não autorizada.
+              A Gratia Plena Sistemas não vende dados pessoais. Os registros do GlicoData podem ser
+              acessados por pesquisadores e integrantes autorizados do projeto GlicoData, vinculado
+              à Universidade Estadual de Ponta Grossa (UEPG), para as finalidades científicas
+              descritas nesta política. Resultados de pesquisas e estatísticas devem ser divulgados
+              de forma agregada ou anonimizada, sem identificar diretamente os participantes.
+            </p>
+            <p>
+              Informações também podem ser compartilhadas com provedores necessários à operação do
+              aplicativo, do site, da hospedagem, do e-mail e da segurança, ou com autoridades
+              públicas quando houver obrigação legal, sempre dentro do escopo necessário.
             </p>
           </article>
 
           <article className="legal-section">
-            <h2>7. Seus direitos</h2>
+            <h2>7. Cookies e tecnologias semelhantes</h2>
             <p>
-              Você pode solicitar acesso, correção, atualização, eliminação ou informações sobre o
-              tratamento dos seus dados pessoais. As solicitações serão avaliadas conforme a
-              legislação aplicável, incluindo a Lei Geral de Proteção de Dados Pessoais (LGPD).
+              O site pode usar cookies essenciais ou registros técnicos para funcionamento,
+              segurança e medição de desempenho. Caso novas ferramentas analíticas sejam
+              adicionadas, esta política será atualizada para detalhar sua utilização.
+            </p>
+          </article>
+
+          <article className="legal-section">
+            <h2>8. Retenção e segurança</h2>
+            <p>
+              Os dados são mantidos durante o período necessário às finalidades informadas, à
+              segurança dos serviços e ao cumprimento de obrigações legais, regulatórias ou éticas
+              aplicáveis. Adotamos medidas técnicas e administrativas para reduzir riscos de acesso
+              indevido, perda, alteração ou divulgação não autorizada.
+            </p>
+          </article>
+
+          <article className="legal-section">
+            <h2>9. Seus direitos</h2>
+            <p>
+              Nos termos da Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018), você pode
+              solicitar confirmação do tratamento, acesso, correção, informação sobre
+              compartilhamentos, anonimização, bloqueio, eliminação, revogação do consentimento e
+              os demais direitos aplicáveis. Quando não for tecnicamente possível localizar um
+              envio anônimo sem informações adicionais, essa limitação será informada ao
+              solicitante.
+            </p>
+          </article>
+
+          <article className="legal-section">
+            <h2>10. Crianças e adolescentes</h2>
+            <p>
+              O GlicoData não é direcionado a crianças. Menores de idade devem utilizá-lo somente
+              com a ciência e a assistência de seu responsável legal, conforme a legislação
+              aplicável.
+            </p>
+          </article>
+
+          <article className="legal-section">
+            <h2>11. Alterações desta política</h2>
+            <p>
+              Esta política pode ser atualizada para refletir mudanças legais, técnicas ou
+              operacionais. A versão vigente e a data de atualização permanecerão disponíveis
+              nesta página.
             </p>
           </article>
 
           <article className="legal-section legal-contact">
-            <h2>8. Contato sobre privacidade</h2>
+            <h2>12. Contato sobre privacidade</h2>
             <p>
               Para dúvidas ou solicitações relacionadas a esta política, entre em contato pelo
               e-mail <a href="mailto:contato@gratiaplenasistemas.com.br">contato@gratiaplenasistemas.com.br</a>.
@@ -849,7 +929,7 @@ export default function App() {
     description?.setAttribute(
       "content",
       isPrivacyPage
-        ? "Política de privacidade da Gratia Plena Sistemas para dados enviados pelo site e canais de contato."
+        ? "Política de privacidade da Gratia Plena Sistemas para o aplicativo GlicoData, o site e os canais de contato."
         : "Gratia Plena Sistemas desenvolve software sob demanda: sistemas web, apps, integrações, automações, dados e sustentação evolutiva.",
     );
   }, [isPrivacyPage]);
